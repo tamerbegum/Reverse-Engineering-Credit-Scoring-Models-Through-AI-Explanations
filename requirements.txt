@@ -1,0 +1,8 @@
+numpy==1.26.4
+pandas==1.5.3
+kagglehub==0.3.10
+matplotlib==3.9.2
+scikit-learn==1.5.2
+dice-ml==0.11
+NICEx==0.2.3
+ucimlrepo==0.0.7
