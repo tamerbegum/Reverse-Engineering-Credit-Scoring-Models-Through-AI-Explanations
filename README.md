@@ -71,15 +71,15 @@ Execute model extraction on credit datasets:
 
 In `model_extraction_main.py`, set:
 
-\`\`\`python
+```python
 DATASET_CHOICE = "german"
-\`\`\`
+```
 
 Then run:
 
-\`\`\`bash
+```bash
 python model_extraction_main.py
-\`\`\`
+```
 
 **Target Models Tested:**
 
@@ -94,9 +94,9 @@ Same architectures as target models for comparison
 
 Visualize attack dynamics on synthetic moon dataset:
 
-\`\`\`bash
+```bash
 python counterfactual_attack_viz.py
-\`\`\`
+```
 
 **Generates decision boundary plots showing:**
 
@@ -109,9 +109,9 @@ python counterfactual_attack_viz.py
 
 Analyze extraction effectiveness:
 
-\`\`\`bash
+```bash
 python fidelity_analysis.py
-\`\`\`
+```
 
 **Produces:**
 
@@ -180,7 +180,7 @@ python fidelity_analysis.py
 
 Key parameters in `model_extraction_main.py`:
 
-\`\`\`python
+```python
 # Dataset selection
 DATASET_CHOICE = "german"
 
@@ -195,7 +195,7 @@ desired_class = "opposite"
 # Model parameters
 max_iter = 2000
 random_state = 42
-\`\`\`
+```
 
 ## 📊 Output Files
 
