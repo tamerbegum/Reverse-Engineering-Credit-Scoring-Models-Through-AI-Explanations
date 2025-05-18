@@ -67,7 +67,7 @@ kaggle configure
 
 Execute model extraction on credit datasets:
 
-In `model_extraction_main.py`, set:
+In `main.py`, set:
 
 ```python
 DATASET_CHOICE = "german"
