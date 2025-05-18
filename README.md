@@ -6,9 +6,7 @@ This repository contains code for performing model extraction attacks on credit 
 
 Model extraction attacks aim to create surrogate models that approximate the decision behavior of target credit scoring models. This research specifically investigates how counterfactual explanations can enhance model extraction in the credit scoring domain.
 
-## 💡 Key Innovation
-
-When a credit application is approved (positive prediction), counterfactuals are generated and labeled as denied (negative class). This strategy provides surrogate models with additional decision boundary information, improving their ability to mimic the target model's behavior.
+When a credit application is rejected (negative prediction), counterfactuals are generated and labeled as approved (pozitive class). This strategy provides surrogate models with additional decision boundary information, improving their ability to mimic the target model's behavior.
 
 ## 🔁 Attack Methodology
 
