@@ -52,13 +52,13 @@ kaggle configure
 ## 📁 Project Structure
 
 ```bash
-├── model_extraction_main.py          # Main extraction script for credit datasets
-├── counterfactual_attack_viz.py      # Visualization of attack on synthetic data
-├── fidelity_analysis.py              # Comprehensive results analysis
-├── results_dice.csv                  # DiCE extraction results
-├── results_nice.csv                  # NICE extraction results
-├── model_accuracies.csv              # Target model performance metrics
-└── visualizations/                   # Generated plots and tables
+├── main.py                                         # Main extraction script for credit datasets
+├── decision_boundary_generation_moons.py           # Visualization of attack on synthetic data
+├── aggregation_datasets.py                         # Comprehensive results analysis
+├── results_dice.csv                                # DiCE extraction results
+├── results_nice.csv                                # NICE extraction results
+├── model_accuracies.csv                            # Target model performance metrics
+└── visualizations/                                 # Generated plots and tables
 ```
 
 ## 🎯 Usage
@@ -76,7 +76,7 @@ DATASET_CHOICE = "german"
 Then run:
 
 ```bash
-python model_extraction_main.py
+python main.py
 ```
 
 **Target Models Tested:**
@@ -93,7 +93,7 @@ Same architectures as target models for comparison
 Visualize attack dynamics on synthetic moon dataset:
 
 ```bash
-python counterfactual_attack_viz.py
+python decision_boundary_generation_moons.py
 ```
 
 **Generates decision boundary plots showing:**
@@ -108,7 +108,7 @@ python counterfactual_attack_viz.py
 Analyze extraction effectiveness:
 
 ```bash
-python fidelity_analysis.py
+python aggregation_datasets.py
 ```
 
 **Produces:**
@@ -176,7 +176,7 @@ python fidelity_analysis.py
 
 ## 🔧 Configuration
 
-Key parameters in `model_extraction_main.py`:
+Key parameters in `main.py`:
 
 ```python
 # Dataset selection
