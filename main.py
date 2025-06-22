@@ -516,7 +516,7 @@ nice_explainers = initialize_nice_explainers(X_target, y_target, numerical_featu
 X_test = df_test.drop(columns=[target_feature])
 X_attack = df_attack.drop(columns=[target_feature])
 y_test = df_test[target_feature]
-y_attack = df_test[target_feature]  # Available for evaluation if needed
+y_attack = df_attack[target_feature]  # not used
 
 
 # ================================================================================
