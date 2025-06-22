@@ -820,7 +820,7 @@ results_dice = model_extraction(target_models, X_attack, X_test, y_test, cf_meth
 plot_highest_fidelity_table(results_dice, cf_method="DiCE", filename="highest_fidelity_report_dice.png")
 
 # Run model extraction with NICE counterfactuals
-results = model_extraction(target_models, X_attack, X_test, y_test, cf_method="NICE")
+results_nice = model_extraction(target_models, X_attack, X_test, y_test, cf_method="NICE")
 plot_highest_fidelity_table(results, cf_method="NICE", filename="highest_fidelity_report.png")
 
 # ================================================================================
@@ -831,4 +831,4 @@ plot_highest_fidelity_table(results, cf_method="NICE", filename="highest_fidelit
 add_results_to_csv(results_dice, cf_method="DiCE", filename="results_dice.csv")
 
 # Save NICE results to CSV
-add_results_to_csv(results, cf_method="NICE", filename="results_nice.csv")
+add_results_to_csv(results_nice, cf_method="NICE", filename="results_nice.csv")
